@@ -1,0 +1,237 @@
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --background-navbar: #f9b75d;
+  --background-general: #f9b75d;
+  --letras-navbar: #000000;
+  --letras-titulo: #000000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: black;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: var(--background-general);
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background: pink;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+.contenedor {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  width: 80rem;
+  display: flex;
+  align-items: center;
+  transition: 0.6s;
+  padding: 0 10%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 900;
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header ul li {
+  list-style: none;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+  display: block;
+}
+
+header ul li a:hover {
+  color: #af0f19;
+}
+
+#general {
+  width: 80rem;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.titulo {
+  width: 90%;
+  padding-top: 0.1%;
+  overflow: hidden;
+  border-color: black;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo h1 {
+  color: rgb(10, 10, 10);
+  font-size: 4rem;
+  padding: 0;
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 5%;
+}
+
+.titulo p {
+  position: relative;
+  color: rgb(10, 10, 10);
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.teclado {
+  background: black;
+  width: 70rem;
+  height: 22rem;
+  overflow: hidden;
+  border: 10px;
+  border-color: black;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px #222;
+  position: absolute;
+  top: 120%;
+  left: 8.4%;
+  padding-left: 0.85%;
+}
+
+.tecla {
+  background: white;
+  width: 9.4%;
+  height: 95%;
+  margin-right: 6px;
+  float: left;
+  color: black;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+.tecla.activo {
+  background: #c0c0c0;
+}
+
+.tecla-sostenido {
+  background: #000;
+  width: 3.5%;
+  height: 50%;
+  float: left;
+  position: absolute;
+  color: white;
+  border: 0;
+  z-index: 3;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+.tecla-sostenido.activo {
+  background: #101010;
+}
+
+.letra {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  position: relative;
+  margin-top: 270%;
+  left: 5%;
+  transition: opacity 0.3s ease-out;
+  font-size: 20px;
+}
+
+.letra-sostenido {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  position: relative;
+  margin-top: 300%;
+  left: 5%;
+  transition: opacity 0.3s ease-out;
+  font-size: 20px;
+}
+
+.letra:hover {
+  opacity: 0.7;
+}
+
+.letra-sostenido:hover {
+  opacity: 0.7;
+}
+
+.Db4 {
+  left: 9.2%;
+}
+
+.Eb4 {
+  left: 19%;
+}
+
+.Gb4 {
+  left: 38.5%;
+}
+
+.Ab4 {
+  left: 48.4%;
+}
+
+.Bb4 {
+  left: 58.2%;
+}
+
+.Db5 {
+  left: 77.8%;
+}
+
+.Eb5 {
+  left: 87.6%;
+}

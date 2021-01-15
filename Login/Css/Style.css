@@ -1,0 +1,199 @@
+:root {
+  font-size: 16px;
+  font-family: "Inter";
+  --bg-general: black;
+  --letras-titulo: #000000;
+  --bg-btn: linear-gradient(
+    to right,
+    rgba(55, 56, 46, 0.4),
+    rgba(73, 75, 60, 0.4)
+  );
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: url(../../Settings/Wallpaper/47.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar-track {
+  background: pink;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+.contenedor {
+  width: 100%;
+  height: 43.7em;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formulario {
+  width: 25%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.formulario .user {
+  width: 100%;
+  height: 70%;
+}
+
+.img-user {
+  width: 100%;
+  height: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.img-user img {
+  width: 10.5em;
+  height: 10.5em;
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+  position: absolute;
+  top: -52%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.borde-img {
+  width: 10.7em;
+  height: 10.7em;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+  top: -25.9%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: linear-gradient(
+    270deg,
+    #656bcf,
+    #4b87c6,
+    #4bc65a,
+    #c6b34b,
+    #c65c4b,
+    #c64b4b,
+    #c54bc6
+  );
+  background-size: 1400% 1400%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  -o-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.user .username {
+  text-align: center;
+  margin-top: 7%;
+  font-size: 1.5em;
+}
+
+.formulario .contraseña {
+  width: 100%;
+  height: auto;
+  margin-left: 3.2%;
+}
+
+.formulario .pass {
+  width: 80%;
+  height: 1.7em;
+  outline: none;
+  font-size: 17px;
+  box-sizing: border-box;
+  padding: 0.4rem;
+  margin-bottom: 1.4%;
+}
+
+.formulario .ok {
+  width: 10%;
+  height: 2.3em;
+  background: var(--bg-btn);
+  color: black;
+  outline: none;
+  cursor: pointer;
+  border: 1px;
+  border-radius: 100%;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.fa-angle-right {
+  font-size: 1.7em;
+  color: white;
+}

@@ -1,0 +1,102 @@
+* {
+  padding: 0px;
+  margin: 0px;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(228, 248, 114);
+  font-family: "Inter";
+}
+
+.contenedor {
+  padding: 0px;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(187, 205, 255);
+  border: 0px dashed rgb(116, 51, 153);
+}
+
+#player {
+  background-color: rgb(255, 248, 154);
+  border: 0px dashed rgb(49, 150, 45);
+  width: 50px;
+  height: 50px;
+  border-radius: 29px;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.pointer {
+  height: 30px;
+  margin-top: 30px;
+  border-bottom: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.instrucciones-1 {
+  width: 20%;
+  height: 12em;
+  text-align: center;
+  padding: 3%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.instrucciones-2 {
+  width: 20%;
+  height: 12em;
+  text-align: center;
+  padding: 3%;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+#resultado {
+  width: 80%;
+  height: 2em;
+  text-align: center;
+  padding: 3%;
+  font-size: 200%;
+  color: black;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Do Hyeon", sans-serif;
+  position: absolute;
+  top: 87%;
+  left: 0;
+  right: 0;
+}
+
+#reiniciar {
+  width: 10em;
+  height: 3em;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Do Hyeon", sans-serif;
+  top: 50%;
+  right: 9%;
+  cursor: pointer;
+}

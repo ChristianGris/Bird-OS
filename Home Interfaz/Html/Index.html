@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/Style.Css" />
+    <link rel="stylesheet" href="../Css/Normalize.Css" />
+
+    <!-- Animate CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Fuentes -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@485&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+
+    
+
+    <!-- Icono -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Settings/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Settings/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Settings/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../Settings/Favicon/site.webmanifest">
+    <link rel="shortcut icon" href="../../Settings/Favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../Settings/Favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <!-- AnimateCss -->
+    <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+
+    <title>Bird OS</title>
+  </head>
+  <body onclick="obtenerID(this.id)">
+    <div class="contenedor" id="contenedor">
+      
+      <section class="widgets">
+        <div class="wg-reloj">
+          <div class="wg-dia">
+            <p id="wdiaSemana" class="diaSemana"></p>
+          </div>
+
+          <div class="wg-fecha">
+            <div> 
+              <p id="wdia" class="dia"></p>
+              <p> DE </p>
+              <p id="wmes" class="mes"></p>
+              <p> DEL </p>
+              <p id="wyear" class="year"></p>
+            </div>
+          </div>  
+        </div>
+      </section>
+
+      <!-- Ventana -->
+      <div class="ventanas">
+        <div class="vent-base">
+          <!-- Barra Superior -->
+          <div class="vent-bar"> 
+            <div class="vent-name" id="vent-name">  </div>
+            <!-- Botones -->
+            <div class="bar-btn"><div class="cerrar-btn"><i class="fas fa-times"></i></div></div>
+          </div>
+          <!-- Contenido -->
+          <div class="vent-content"> 
+            <div class="page-content"> 
+              <!-- Aplicaciones / Barra de Tareas -->
+              <div class="frame vent-maps" id="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29862.890125607133!2d-103.36252191881043!3d20.67522250368796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1fb5af37bdd%3A0xb87f79d3e376a76f!2s%22La%20Chingada%22!5e0!3m2!1ses-419!2smx!4v1606283765133!5m2!1ses-419!2smx" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+                                    
+              <!-- Aplicaciones / Escritorio -->
+              <div class="frame vent-aim-game" id="aim-game"><iframe src="../../Apps/Juego/index.html" width="100%" height="auto" frameborder="0" style="border:0"; allowfullscreen="" aria-hidden="false" tabindex="0"> </iframe></div>
+              <div class="frame vent-piano" id="piano-digital"><iframe src="../../Apps/Piano/Html/Index.html" width="100%" height="auto" frameborder="0" style="border:0"; allowfullscreen="" aria-hidden="false" tabindex="0"> </iframe></div>
+              <div class="frame vent-reloj" id="reloj"><iframe src="../../Apps/Reloj/Index.html" width="100%" height="auto" frameborder="0" style="border:0"; allowfullscreen="" aria-hidden="false" tabindex="0"> </iframe></div>
+              <div class="frame vent-calculadora" id="calculadora"><iframe src="../../Apps/Calculadora/Html/Index.html" width="100%" height="auto" frameborder="0" style="border:0"; allowfullscreen="" aria-hidden="false" tabindex="0"> </iframe></div>
+              <div class="frame vent-reproductor" id="reproductor"><iframe src="../../Apps/Reproductor/HTML.html" width="100%" height="auto" frameborder="0" style="border:0"; allowfullscreen="" aria-hidden="false" tabindex="0"> </iframe></div>
+
+              <!--
+              <div class="frame vent-" id=""><iframe src="../../Apps/" width="100%" height="auto" frameborder="0" style="border:0"; allowfullscreen="" aria-hidden="false" tabindex="0"> </iframe></div>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="apps-menu"> 
+
+          <div class="bg"></div>
+          
+          <nav> <div class="cerrar-menu"><i class="fas fa-chevron-left"></i></div></nav>
+
+          <section class="apps-icons animate__animated animate__backInLeft">
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            
+            
+          </section>
+      </section>
+
+
+      <section class="accesos-directos"> 
+        <div class="ad-1"><div><img src="../../Settings/App Icons/1.png" alt="Icono Aim Game"></div><p>AimGame</p></div>
+        <div class="ad-2"><div><img src="../../Settings/App Icons/2.png" alt="Icono Piano Digital"></div><p>Piano Digital</p></div>
+        <div class="ad-3"><div><img src="../../Settings/App Icons/3.png" alt="Icono Calculadora"></div><p>Calculadora</p></div>
+        <div class="ad-4"><div><img src="../../Settings/App Icons/4.png" alt="Icono Musica"></div><p>Musica</p></div>
+        <div class="ad-5"><div><img src="../../Settings/App Icons/5.png" alt="Icono Reloj"></div><p>Reloj</p></div>
+
+      </section>
+
+      <div class="work-bar">
+        <div class="wb-1"><i class="fas fa-dove icon"></i></div>
+        <div class="wb-2">
+          <div class="div-search-icon">
+            <button class="search-icon" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="div-search-input">
+            <input placeholder="Escribe tu Busqueda" class="search-input" type="text"></input>
+          </div>
+        </div>
+        <div class="wb-3"><i class="fas fa-expand icon"></i></div>
+        <div class="wb-4"></div>
+        <div class="wb-5">
+          <div class="op"><i class="fas fa-angle-up"></i></div>
+          <div class="op"><i class="fas fa-volume-up"></i></div>
+          <div class="op"><i class="fas fa-signal"></i></div>
+          <div class="op"><i class="fas fa-battery-full"></i></div>
+        </div>
+        <div class="wb-6">
+
+          <div class="reloj">
+            <div class="caja-minutos"> 
+              <p id="horas" class="horas"></p>
+              <p>:</p>
+              <p id="minutos" class="minutos"></p>
+              <p>:</p>
+            </div>
+            <div class="caja-segundos">
+              <p id="segundos" class="segundos"></p>
+              <p id="ampm" class="ampm"></p>
+            </div>
+          </div>
+
+          <div class="fecha">
+            <p id="diaSemana" class="diaSemana"></p>
+            <p id="dia" class="dia"></p>
+            <p>/</p>
+            <p id="mes" class="mes"></p>
+            <p>/</p>
+            <p id="year" class="year"></p>
+          </div>
+
+        </div>
+        <a class="link-btn maps-btn" id="google-maps" href="#"><div class="wb-7"><i class="fas fa-map-marker-alt"></i></div></a>
+        <a href="../../Login/Html/Index.html"><div class="wb-8"><i class="fas fa-lock"></i></div></a>
+      </div>
+    </div>
+
+    <script src="../Js/Script.Js" type="text/javascript"></script>
+    <script src="../Js/Script-Reloj.Js" type="text/javascript"></script>
+    <script src="../Js/Widgets/Reloj.Js" type="text/javascript"></script>
+  </body>
+</html>

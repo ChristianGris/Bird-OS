@@ -1,0 +1,573 @@
+:root {
+  --bg-wb: rgb(111, 238, 60);
+  --bg-wb-sq: linear-gradient(
+    to right,
+    rgba(55, 56, 46, 0.4),
+    rgba(73, 75, 60, 0.4)
+  );
+  --bg-vent-bar: linear-gradient(
+    to right,
+    rgba(55, 56, 46, 0.4),
+    rgba(73, 75, 60, 0.4)
+  );
+  --bg-wb-icon: white;
+  --bg-general: black;
+  --letras-navbar: #000000;
+  --letras-titulo: #000000;
+}
+
+* {
+  font-size: 16px;
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: url(../../Settings/Wallpaper/47.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+.contenedor {
+  width: 100%;
+  height: 43.7em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Widgets */
+
+.widgets {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 10%;
+  box-sizing: border-box;
+}
+
+.widgets .wg-reloj {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.widgets .wg-dia {
+  width: 100%;
+  height: 50%;
+}
+
+.wg-dia p {
+  width: 100%;
+  float: left;
+  font-size: 6em;
+  margin: auto;
+  margin-top: 1%;
+  text-align: center;
+  font-family: "Squada One", cursive;
+}
+
+.widgets .wg-fecha {
+  width: 100%;
+  height: 25%;
+}
+
+.widgets .wg-fecha div {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.wg-fecha p {
+  float: left;
+  margin-left: 1%;
+}
+
+.widgets .wg-hora {
+  width: 100%;
+  height: 25%;
+}
+.widgets .wg-hora div {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.wg-hora p {
+  float: left;
+  margin-left: 0.5%;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.apps-menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 50;
+  max-width: 1400px;
+  background: url(../../Settings/Wallpaper/47.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: none;
+}
+.apps-menu .bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.5);
+  position: absolute;
+  z-index: 40;
+}
+
+.apps-menu nav {
+  background-color: rgba(32, 32, 32, 0.226);
+  width: 100%;
+  height: 10%;
+}
+
+.apps-menu .apps-icons {
+  width: 100%;
+  height: 90%;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.apps-icons div {
+  width: 4em;
+  height: 4em;
+  background-color: rgba(58, 57, 57, 0.472);
+  float: left;
+  margin-right: 2%;
+  margin-top: 2%;
+  padding: 1%;
+  cursor: pointer;
+  border-radius: 20%;
+}
+
+.cerrar-menu {
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  left: 3%;
+  top: 4%;
+}
+
+.fas .fa-chevron-left{
+  font-size: 2em;
+  color: white
+}
+
+/*/ //////////////////////////////////////////////////////////////////////////////////////////*/
+
+.accesos-directos {
+  width: 80%;
+  height: 5em;
+  position: absolute;
+  margin: 0 auto;
+  top: 78%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.accesos-directos div {
+  width: 3em;
+  height: 80%;
+  float: left;
+  margin-right: 3%;
+  cursor: pointer;
+  border-radius: 25%;
+}
+
+.accesos-directos p {
+  font-size: 0.7em;
+  text-align: center;
+  margin-top: 5.5em;
+}
+
+.ad-1 img {
+  width: 3em;
+}
+.ad-2 img {
+  width: 3em;
+}
+.ad-3 img {
+  width: 3em;
+}
+.ad-4 img {
+  width: 3em;
+}
+.ad-5 img {
+  width: 3em;
+}
+.ad-6 img {
+  width: 3em;
+}
+.ad-7 img {
+  width: 3em;
+}
+
+/*/ //////////////////////////////////////////////////////////////////////////////////////////*/
+
+.work-bar {
+  position: absolute;
+  bottom: 0.5%;
+  width: 99%;
+  height: 2.1em;
+  left: 0.5%;
+  z-index: 20;
+}
+
+.work-bar .wb-1 {
+  width: 3%;
+  height: 100%;
+  background: var(--bg-wb-sq);
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.work-bar .wb-2 {
+  width: 20%;
+  height: 100%;
+  background: var(--bg-wb-sq);
+  margin-left: 0.5%;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wb-2 .div-search-icon {
+  width: 15%;
+  height: 100%;
+  float: left;
+}
+
+.wb-2 .div-search-input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.search-icon {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  border: 0;
+  font-weight: 100;
+
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.search-input {
+  width: 60%;
+  height: 70%;
+  float: left;
+  margin-top: 1.8%;
+  background-color: transparent;
+  border: 0;
+  cursor: text;
+  outline: none;
+  color: white;
+  font-family: "Inter";
+  font-size: 0.77em;
+}
+
+.work-bar .wb-3 {
+  width: 3%;
+  height: 100%;
+  background: var(--bg-wb-sq);
+  margin-left: 0.5%;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.work-bar .wb-4 {
+  width: 40.5%;
+  height: 100%;
+  background: var(--bg-wb-sq);
+  margin-left: 0.5%;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.work-bar .wb-5 {
+  width: 12%;
+  height: 100%;
+  background: var(--bg-wb-sq);
+  margin-left: 0.5%;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wb-5 .op {
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+.op .fa-angle-up {
+  margin-top: 20%;
+}
+
+.op .fa-volume-up {
+  margin-top: 23%;
+  font-size: 0.95em;
+}
+
+.op .fa-signal {
+  margin-top: 27%;
+  font-size: 0.8em;
+}
+
+.op .fa-battery-full {
+  margin-top: 23%;
+  font-size: 1em;
+}
+.work-bar .wb-6 {
+  width: 12%;
+  height: 100%;
+  background: var(--bg-wb-sq);
+  margin-left: 0.5%;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.work-bar .wb-7 {
+  width: 3%;
+  height: 100%;
+  background: var(--bg-wb-sq);
+  margin-left: 0.5%;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.work-bar .wb-8 {
+  width: 3%;
+  height: 100%;
+  background: var(--bg-wb-sq);
+  margin-left: 0.5%;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.work-bar .wb-8 {
+  text-decoration: none;
+  color: white;
+}
+
+.icon {
+  color: var(--bg-wb-icon);
+}
+
+.fa-dove {
+  font-size: 1.1rem;
+  margin-top: 22%;
+}
+
+.fa-expand {
+  font-size: 0.85rem;
+  margin-top: 28%;
+}
+
+.fa-lock {
+  font-size: 0.85rem;
+  margin-top: 28%;
+}
+
+.fa-map-marker-alt {
+  font-size: 1rem;
+  margin-top: 23%;
+}
+
+.link-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.reloj {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 2%;
+}
+
+.reloj p {
+  font-size: 0.6em;
+  display: inline-block;
+  color: white;
+}
+
+.caja-minutos {
+  width: 60%;
+  height: 100%;
+  text-align: right;
+  float: left;
+}
+
+.caja-segundos {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.fecha {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 2%;
+}
+
+.fecha p {
+  font-size: 0.6em;
+  display: inline-block;
+  color: white;
+}
+
+
+/*/ //////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Ventanas */
+
+.ventanas {
+  width: 100%;
+  height: 94.9%;
+  position: absolute;
+  z-index: 15;
+}
+
+.vent-base {
+  width: 100%;
+  height: 99%;
+  margin: auto;
+  display: none;
+}
+
+.vent-bar {
+  width: 100%;
+  height: 3.8%;
+  background: var(--bg-vent-bar);
+  display: flex;
+}
+
+.vent-name {
+  width: 40%;
+  height: 85%;
+  font-size: 0.9em;
+  font-weight: 100;
+  padding: 2px;
+  text-align: center;
+  margin-left: 29%;
+  margin-top: 0.1%;
+  cursor: default;
+}
+
+.bar-btn {
+  width: 10%;
+  height: 100%;
+  margin-left: 19.9%;
+}
+
+.cerrar-btn {
+  width: 25%;
+  height: 80%;
+  float: right;
+  cursor: pointer;
+  background: var(--bg-vent-bar);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cerrar-btn .fa-times {
+  color: white;
+}
+
+.vent-content {
+  width: 100%;
+  height: 96.2%;
+  background: var(--bg-vent-bar);
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Apps */
+
+.frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+}
+
+.vent-maps,
+.vent-aim-game {
+  display: none;
+}
